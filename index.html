@@ -20,12 +20,49 @@
       crossorigin="anonymous"
     />
 
+    <!-- Custom Hamburgers by: https://jonsuh.com/hamburgers/ -->
+    <link href="/Src/hamburger.css" rel="stylesheet" />
     <!-- Custom style -->
     <link rel="stylesheet" href="/Src/Style.css" />
   </head>
   <body>
     <!-- Logo -->
     <!----------x----------- Navigation ---------------x------->
+    <nav
+      class="navbar navbar-expand-lg navbar-light m-auto wrapper"
+      id="nav-bar"
+    >
+      <!-- Logo -->
+      <a class="navbar-brand" href="#"><span class="bold">ane</span>mcgrail</a>
+
+      <!-- Hamburger Menu -->
+      <button
+        class="navbar-toggler hamburger hamburger--spin-r"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <!-- Navbar & Collapsable If Mobile -->
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link active bold" href="./index.html"
+            >home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link bold" href="./blog.html">blog</a>
+          <a class="nav-item nav-link bold" href="./about.html">about</a>
+          <a class="nav-item nav-link bold" href="./contact.html">contact</a>
+          <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+        </div>
+      </div>
+    </nav>
     <!---------------------- Header ----------------------->
     <!---------------------- Profile card ----------------------->
     <!---------------------- Socials ----------------------->
