@@ -1,1 +1,37 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body > nav.navbar {
+  background-color: #fff;
+}
+
+body {
+  background-color: black;
+}
+
+/*-- Socials --*/
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.socials a {
+  display: block;
+  font-size: 1.5rem;
+  color: black;
+  margin-left: 1rem;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.socials a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.socials a:nth-child(2),
+.socials a:nth-child(3) {
+  margin-left: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
