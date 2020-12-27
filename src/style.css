@@ -33,8 +33,9 @@ body {
 }
 
 hr {
-  color: black;
+  background-color: rgba(0, 0, 0, 0.513);
   margin-top: 4px;
+  border-width: 1px;
 }
 
 .profile-picture {
@@ -55,10 +56,10 @@ hr {
 /*--------------------- contact page -----------------------*/
 /*-- email card --*/
 #email-link {
-  height: 35rem;
   background-color: rgba(0, 0, 0, 0.513);
   color: #ffffff;
   text-align: center;
+  margin-top: 4rem;
 }
 .link {
   text-decoration: none;
