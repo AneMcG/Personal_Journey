@@ -1,19 +1,11 @@
-body > nav.navbar {
-  background-color: #fff;
-}
-
-body {
-  background-color: black;
-}
-
-/*-- Socials --*/
+/*------------------------- Socials -----------------------*/
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .socials a {
@@ -27,11 +19,58 @@ body {
 
 .socials a:hover {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .socials a:nth-child(2),
 .socials a:nth-child(3) {
   margin-left: 1rem;
 }
+
+/*--------------------- main page -----------------------*/
+body {
+  background-color: rgba(112, 107, 107, 0.445);
+}
+
+hr {
+  color: black;
+  margin-top: 4px;
+}
+
+.profile-picture {
+  display: block;
+  margin: 0 auto;
+  border-radius: 1.5%;
+  height: 15rem;
+}
+
+#Description {
+  max-width: 65%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*--------------------- contact page -----------------------*/
+/*-- email card --*/
+#email-link {
+  height: 35rem;
+  background-color: rgba(0, 0, 0, 0.513);
+  color: #ffffff;
+  text-align: center;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.2s all ease-in-out;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
+  -webkit-transform: scale(2.05);
+}
+
 /*# sourceMappingURL=style.css.map */
