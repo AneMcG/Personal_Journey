@@ -74,4 +74,40 @@ hr {
   -webkit-transform: scale(2.05);
 }
 
+.quick-search {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  border-bottom: 2px solid #7a7a7a;
+  border-bottom-width: 2px;
+  border-width: 0 0 2px 0;
+  background-color: transparent;
+  height: 25px;
+  line-height: 25px;
+  font-size: 21px;
+  font-family: MontSerrat, Tahoma, Arial, sans-serif;
+  font-weight: 700;
+  color: #8a8a8a;
+  letter-spacing: 2px;
+}
+
+button {
+  height: 35px;
+  margin-top: 6px;
+  margin-bottom: 25px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: 1px solid #7a7a7a;
+  background-color: #3f3f3f;
+  color: #8a8a8a;
+  font-family: MontSerrat, Tahoma, Arial, sans-serif;
+}
+
+.next-button {
+  width: 4rem;
+}
+.submit-button {
+  width: 12rem;
+}
+
 /*# sourceMappingURL=style.css.map */
