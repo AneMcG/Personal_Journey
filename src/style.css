@@ -38,6 +38,12 @@ hr {
   border-width: 1px;
 }
 
+.navbar-brand {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  padding: 0;
+}
+
 .profile-picture {
   display: block;
   margin: 0 auto;
@@ -55,6 +61,9 @@ hr {
 
 /*--------------------- contact page -----------------------*/
 /*-- email card --*/
+.heading {
+  font-size: 2.5rem;
+}
 #email-link {
   background-color: rgba(0, 0, 0, 0.513);
   color: #ffffff;
@@ -63,7 +72,7 @@ hr {
 }
 .link {
   text-decoration: none;
-  color: black;
+  color: white;
   -webkit-transition: 0.2s all ease-in-out;
 }
 
