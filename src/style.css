@@ -29,7 +29,6 @@
 
 /*--------------------- main page -----------------------*/
 body {
-  background-color: rgba(112, 107, 107, 0.445);
 }
 
 hr {
@@ -96,7 +95,7 @@ hr {
   font-size: 21px;
   font-family: MontSerrat, Tahoma, Arial, sans-serif;
   font-weight: 700;
-  color: #8a8a8a;
+  color: #9e9c9c;
   letter-spacing: 2px;
 }
 
