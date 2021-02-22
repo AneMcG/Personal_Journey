@@ -1,42 +1,9 @@
-/*------------------------- Socials -----------------------*/
-.socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.socials a {
-  display: block;
-  font-size: 1.5rem;
-  color: black;
-  margin-left: 1rem;
-  -webkit-transition: 0.2s all ease-in-out;
-  transition: 0.2s all ease-in-out;
-}
-
-.socials a:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-.socials a:nth-child(2),
-.socials a:nth-child(3) {
-  margin-left: 1rem;
-}
-
 /*--------------------- All pages -----------------------*/
 body {
   margin: 0;
-  background: #0b0b0b18;
-}
-
-hr {
-  background-color: rgba(0, 0, 0, 0.513);
-  margin-top: 4px;
-  border-width: 1px;
+  background-image: url("/img/Mountain.jpg");
+  background-size: cover;
+  height: 500px;
 }
 
 .navbar-brand {
@@ -46,20 +13,6 @@ hr {
 }
 
 /*--------------------- Home page -----------------------*/
-.profile-picture {
-  display: block;
-  margin: 0 auto;
-  border-radius: 1.5%;
-  height: 15rem;
-}
-
-#Description {
-  max-width: 65%;
-  display: block;
-  margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
 
 /*--------------------- contact page -----------------------*/
 /*-- email card --*/
