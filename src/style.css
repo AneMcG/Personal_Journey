@@ -1,15 +1,19 @@
 /*--------------------- All pages -----------------------*/
-body {
+.home {
   margin: 0;
   background-image: url("/img/Mountain.jpg");
-  background-size: cover;
-  height: 500px;
-}
 
+  background-repeat: no-repeat;
+  height: 100vh;
+  box-sizing: border-box;
+}
+#navbarNavAltMarkup {
+}
 .navbar-brand {
   font-family: "Great Vibes", cursive;
   font-size: 2rem;
   padding: 0;
+  position: fixed;
 }
 
 /*--------------------- Home page -----------------------*/

@@ -31,45 +31,69 @@
     <!-- Custom style -->
     <link rel="stylesheet" href="/Src/Style.css" />
   </head>
-  <body>
-    <!-- Logo -->
-    <!----------x----------- Navigation ---------------x------->
-    <nav
-      class="navbar navbar-expand-lg navbar-light m-auto wrapper"
-      id="nav-bar"
-    >
+  <body class="home">
+    <section class="home">
       <!-- Logo -->
-      <a class="navbar-brand" href="#"><strong>ane</strong>mcgrail</a>
-
-      <!-- Hamburger Menu -->
-      <button
-        class="navbar-toggler hamburger hamburger--spin-r"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+      <!----------x----------- Navigation ---------------x------->
+      <nav
+        class="navbar navbar-expand-lg navbar-light m-auto wrapper"
+        id="nav-bar"
       >
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
+        <!-- Logo -->
+        <a class="navbar-brand" href="#"><strong>ane</strong>mcgrail</a>
 
-      <!-- Navbar & Collapsable If Mobile -->
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link active bold" href="./index.html"
-            >home <span class="sr-only">(current)</span></a
-          >
-          <a class="nav-item nav-link bold" href="./blog.html">blog</a>
-          <a class="nav-item nav-link bold" href="./gallery.html">gallery</a>
-          <a class="nav-item nav-link bold" href="./contact.html">contact</a>
+        <!-- Hamburger Menu -->
+        <button
+          class="navbar-toggler hamburger hamburger--spin-r"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
 
-          <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+        <!-- Navbar & Collapsable If Mobile -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active bold" href="./index.html"
+              >home <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link bold" href="./blog.html">Recent Work</a>
+            <a class="nav-item nav-link bold" href="./gallery.html">Services</a>
+            <a class="nav-item nav-link bold" href="./contact.html">contact</a>
+
+            <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </section>
+    <section class="contact">
+      <div class="container">
+      <div class="card mx-auto" id="email-link" style="width: 95%">
+        <div class="card-body">
+            <span><strong class="heading">Get in touch</strong> </br>
+            If you wanna get in touch, or talk to me about a project collaboration or work you like on my website,
+            fill up the form below or send me an email at <strong><a class="link" href="mailto:anemcgrail@gmail.com">anemcgrail@gmail.com</a></strong>
+            </span>
+        </div>
+        <form action="">
+            <input class="quick-search" type="text" name="search" value="" autocomplete="off" placeholder="...Give me your name">
+            </input>
+            <button class="next-button">Next</button>
+            <Button class="submit-button">Submit your request</Button>
+        </form>
+            <div>
+              <span>Look, I try to be <strong>social</strong> too...</span>
+            </div>
+           </div>
+        </div>
+    </section>
+
     <!---------------------- Header ----------------------->
 
     <!-- Bootstrap JavaScript -->
