@@ -1,19 +1,24 @@
 /*--------------------- All pages -----------------------*/
-.home {
+body {
   margin: 0;
-  background-image: url("/img/Mountain.jpg");
+}
 
-  background-repeat: no-repeat;
+.home {
   height: 100vh;
   box-sizing: border-box;
+  background-color: aqua;
 }
-#navbarNavAltMarkup {
+
+.contact {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: grey;
 }
+
 .navbar-brand {
   font-family: "Great Vibes", cursive;
   font-size: 2rem;
   padding: 0;
-  position: fixed;
 }
 
 /*--------------------- Home page -----------------------*/
@@ -27,7 +32,6 @@
   background-color: rgba(0, 0, 0, 0.513);
   color: #ffffff;
   text-align: center;
-  margin-top: 4rem;
 }
 .link {
   text-decoration: none;
