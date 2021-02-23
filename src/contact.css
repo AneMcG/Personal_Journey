@@ -1,0 +1,66 @@
+/*--------------------- contact page -----------------------*/
+
+#contactMe {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+}
+#email-link {
+  background-color: rgba(0, 0, 0, 0.513);
+  color: #ffffff;
+  text-align: center;
+}
+.link {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.2s all ease-in-out;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
+  -webkit-transform: scale(2.05);
+}
+
+.quick-search {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  background-color: transparent;
+
+  border-bottom: 2px solid #7a7a7a;
+  border-bottom-width: 2px;
+  border-width: 0 0 2px 0;
+
+  height: 25px;
+  line-height: 25px;
+  font-size: 21px;
+  font-family: MontSerrat, Tahoma, Arial, sans-serif;
+  font-weight: 700;
+  color: #9e9c9c;
+  letter-spacing: 2px;
+}
+
+button {
+  height: 35px;
+  margin-top: 6px;
+  margin-bottom: 25px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: 1px solid #7a7a7a;
+  background-color: #3f3f3f;
+  color: #8a8a8a;
+  font-family: MontSerrat, Tahoma, Arial, sans-serif;
+}
+
+.next-button {
+  width: 4rem;
+}
+.submit-button {
+  width: 12rem;
+}
