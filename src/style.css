@@ -1,38 +1,109 @@
 /*--------------------- All pages -----------------------*/
 body {
-  margin: 0;
-}
-
-html {
-  background: url(images/bg.jpg) no-repeat center center fixed;
+  background: url(/img/Mountain.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  max-height: 100vh;
+  background-repeat: no-repeat;
 }
 
-.home {
-  height: 100vh;
-  box-sizing: border-box;
-  background-color: aqua;
-}
-
-.contact {
-  height: 100vh;
-  box-sizing: border-box;
-  background-color: grey;
-}
-
-.navbar-brand {
+/*--------------------- NavBar -----------------------*/
+.navbar-light .navbar-brand {
   font-family: "Great Vibes", cursive;
+  color: rgb(255, 145, 0);
+  font-size: 2.5rem;
+}
+
+.photography,
+.navbar-light .navbar-nav .nav-link {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  padding: 0;
+  color: rgb(255, 145, 0);
+  margin-left: 0.5rem;
+}
+
+#nav-bar {
+  overflow: hidden;
+  background-color: rgba(104, 102, 102, 0.603);
 }
 
 /*--------------------- Home page -----------------------*/
+.home {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: none;
+}
+
+.work {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.work-title {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Roboto Mono", monospace;
+  padding: 3rem;
+}
+
+.contact {
+  height: 20vh;
+  box-sizing: border-box;
+  background-color: rgb(104, 102, 102);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#contact-me {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.signage {
+  font-family: "Great Vibes", cursive;
+  color: rgb(255, 145, 0);
+  font-size: 3rem;
+}
+
+.contact-nr {
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+}
+.email-link {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgb(255, 145, 0);
+  -webkit-transition: 0.2s all ease-in-out;
+}
+
+.email-link:hover {
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
+  -webkit-transform: scale(2.05);
+}
+
+.greeting {
+  font-size: 1rem;
+  text-align: start;
+}
 
 /*--------------------- contact page -----------------------*/
-/*-- email card --*/
+
+#contactMe {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
 .heading {
   font-size: 2.5rem;
 }
@@ -58,10 +129,12 @@ html {
   display: block;
   margin: 0 auto;
   width: 90%;
+  background-color: transparent;
+
   border-bottom: 2px solid #7a7a7a;
   border-bottom-width: 2px;
   border-width: 0 0 2px 0;
-  background-color: transparent;
+
   height: 25px;
   line-height: 25px;
   font-size: 21px;
