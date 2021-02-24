@@ -183,11 +183,9 @@
                 </form>
 
                 <div class="text-center text-md-left">
-                  <a
-                    class="btn btn-primary"
-                    onclick="document.getElementById('contact-form').submit();"
-                    >Send</a
-                  >
+                  <a class="btn btn-primary" onclick="validateForm();">
+                    Send
+                  </a>
                 </div>
                 <div class="status"></div>
               </div>
@@ -203,6 +201,8 @@
     </section>
     <!---->
 
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -219,7 +219,35 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.js"></script>
     <!-- Custom javascript -->
-    <script src="/Src/script.js"></script>
+    <script>
+      document.getElementById("status").innerHTML = "Sending...";
+      formData = {
+        name: $("input[name=name]").val(),
+        email: $("input[name=email]").val(),
+        subject: $("input[name=subject]").val(),
+        message: $("textarea[name=message]").val(),
+      };
+
+      $.ajax({
+        url: "mail.php",
+        type: "POST",
+        data: formData,
+        success: function (data, textStatus, jqXHR) {
+          $("#status").text(data.message);
+          if (data.code)
+            //If mail was sent successfully, reset the form.
+            $("#contact-form")
+              .closest("form")
+              .find("input[type=text], textarea")
+              .val("");
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          $("#status").text(jqXHR);
+        },
+      });
+    </script>
   </body>
 </html>
