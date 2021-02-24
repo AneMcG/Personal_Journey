@@ -33,7 +33,6 @@
   </head>
 
   <body>
-    <section class="home">
       <!----------x----------- Navigation ---------------x------->
       <nav
         class="navbar navbar-expand-lg navbar-light m-auto wrapper"
@@ -71,62 +70,6 @@
           </div>
         </div>
       </nav>
-    </section>
-    <!------- Previous work --------->
-    <section class="work">
-      <h1 class="work-title">Recent Work</h1>
-      <div class="row">
-        <div class="column">
-          <img src="/img/ackcity.jpg" height="180" />
-        </div>
-        <div class="column">
-          <img src="/img/wall.jpg" height="180" />
-        </div>
-        <div class="column">
-          <img src="/img/moss_log.jpg.jpeg" height="180" />
-        </div>
-        <div class="column">
-          <img src="/img/Mountain.jpg" height="180" />
-        </div>
-        <div class="column">
-          <img src="/img/ackcity.jpg" height="180" />
-        </div>
-        <div class="column">
-          <img src="/img/wall.jpg" height="180" />
-        </div>
-        <div class="column">
-          <img src="/img/moss_log.jpg.jpeg" height="180" />
-        </div>
-        <div class="column">
-          <img src="/img/Mountain.jpg" height="180" />
-        </div>
-        <div class="column">
-          <img src="/img/ackcity.jpg" height="180" />
-        </div>
-        <div class="column">
-          <img src="/img/wall.jpg" height="180" />
-        </div>
-        <div class="column">
-          <img src="/img/moss_log.jpg.jpeg" height="180" />
-        </div>
-        <div class="column">
-          <img src="/img/Mountain.jpg" height="180" />
-        </div>
-        <div class="column">
-          <img src="/img/ackcity.jpg" height="180" />
-        </div>
-        <div class="column">
-          <img src="/img/wall.jpg" height="180" />
-        </div>
-        <div class="column">
-          <img src="/img/moss_log.jpg.jpeg" height="180" />
-        </div>
-        <div class="column">
-          <img src="/img/Mountain.jpg" height="180" />
-        </div>
-      </div>
-    </section>
-    <!------- Contact Section --------->
     <section class="contact">
       <div class="container" id="contact-info">
         <div class="row">
@@ -137,11 +80,37 @@
             <p class="greeting">
               If you have a project in mind, please don't hesitate to contact me.
             </p>
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+        </div>
+        </div>
+    </section>
+    <!------- Previous work --------->
+    <section class="work">
+        <div class="container">
+            <div class="gallery">
+                <figure class="gallery__item gallery__item--1">
+                    <img src="/img/moss_log.jpg.jpeg" alt="Gallery image 1" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                    <img src="/img/raven.jpg.jpeg" alt="Gallery image 2" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                    <img src="/img/pheonix.jpg.jpeg" alt="Gallery image 3" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                    <img src="/img/wall.jpg" alt="Gallery image 4" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                    <img src="/img/ackcity.jpg" alt="Gallery image 5" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--6">
+                    <img src="/img/Mountain.jpg" alt="Gallery image 6" class="gallery__img">
+                </figure>
+            </div>
+        </div>    
+    </section>
+    <!------- Contact Section --------->
   <!--Foot note-->
   <section class="footer">
     <p class="foot-note">
@@ -167,6 +136,23 @@
     ></script>
     <!-- Custom javascript -->
     <script>
+        window.onload = function() {
+	var imgs = document.getElementById('slideshow').children;
+	interval = 8000;
+	currentPic = 0;
+	imgs[currentPic].style.webkitAnimation = 'fadey '+interval+'ms';
+	imgs[currentPic].style.animation = 'fadey '+interval+'ms';
+	var infiniteLoop = setInterval(function(){
+		imgs[currentPic].removeAttribute('style');
+		if ( currentPic == imgs.length - 1) {
+			currentPic = 0;
+		} else {
+			currentPic++;
+		}
+	imgs[currentPic].style.webkitAnimation = 'fadey '+interval+'ms';
+	imgs[currentPic].style.animation = 'fadey '+interval+'ms';
+}, interval);
+}
     </script>
   </body>
 </html>
