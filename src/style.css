@@ -21,14 +21,14 @@ body {
 /*--------------------- Work page -----------------------*/
 .work {
   box-sizing: border-box;
-  background-color: rgb(104, 102, 102);
+  background-color: rgb(253, 252, 252);
 }
 
 .work-title {
   margin: 0;
   display: flex;
   justify-content: space-around;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .row {
