@@ -1,5 +1,6 @@
 /*--------------------- NavBar -----------------------*/
 .navbar-brand {
+  margin: 0;
   font-family: "Great Vibes", cursive;
   font-size: 2rem;
   color: Black;
@@ -49,7 +50,7 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: rgb(255, 145, 0);
+  background-color: #ef7725;
 }
 
 .hamburger-box {
@@ -69,7 +70,7 @@
 .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: rgb(255, 145, 0);
+  background-color: #ef7725;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
