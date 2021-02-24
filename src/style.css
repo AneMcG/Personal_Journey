@@ -47,7 +47,6 @@ body {
 
 /*--------------------- Work page -----------------------*/
 .work {
-  height: 60vh;
   box-sizing: border-box;
   background-color: rgb(104, 102, 102);
 }
@@ -58,6 +57,18 @@ body {
   padding: 3rem;
 }
 
+#image-row {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.portfolio-entry-img {
+  padding: 2rem;
+}
+
+/*--------------------- service page -----------------------*/
 .services {
   box-sizing: border-box;
   background-color: white;
@@ -70,16 +81,16 @@ body {
   background-color: rgb(104, 102, 102);
 }
 
-#contact-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
 #contact-card {
   display: flex;
   flex-direction: column;
   text-align: end;
+}
+
+#contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .signage {
