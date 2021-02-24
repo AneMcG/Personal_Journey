@@ -1,0 +1,28 @@
+/*--------------------- Foot note -----------------------*/
+.footer {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  position: relative;
+}
+
+.foot-note {
+  color: white;
+  padding: 1rem;
+  margin-bottom: 0;
+  position: relative;
+  bottom: 0;
+}
+
+.foot-note-link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #ef7725;
+  -webkit-transition: 0.2s all ease-in-out;
+}
+
+.foot-note-link:hover {
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
+}
