@@ -55,6 +55,16 @@
 .contact {
   box-sizing: border-box;
   background-color: rgb(104, 102, 102);
+  width: 100%;
+  justify-content: center;
+}
+
+#contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  align-items: flex-end;
 }
 
 .btn-epic {
@@ -70,6 +80,7 @@
   color: #ef7725;
   text-align: center;
   transition: all 0.2s;
+  width: 10rem;
 }
 
 .btn-epic:hover {
@@ -77,33 +88,16 @@
   background-color: #ef7725;
 }
 
-@media all and (max-width:30em){
- .btn-epic{
-display:block;
-margin:0.4em auto;
- }
-}
-
-#contact-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.signage {
-  font-family: "Great Vibes", cursive;
-  color: #ef7725;
-  font-size: 3rem;
+@media all and (max-width: 30em) {
+   .btn-epic {
+    display: block;
+    margin: 0.4em auto;
+  }
 }
 
 .greeting {
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding-top: 1rem;
-}
-
-.button {
-  display: flex;
-  justify-content: flex-end;
   text-align: center;
 }
 
@@ -112,8 +106,6 @@ margin:0.4em auto;
   display: flex;
   background-color: black;
   width: 100%;
-  position: fixed;
-  bottom: 0;
 }
 
 .foot-note {
