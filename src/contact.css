@@ -59,6 +59,7 @@ body {
 .btn-epic:hover {
   color: #ffffff;
   background-color: #ef7725;
+  border: 0.1em solid #ffffff;
 }
 
 @media all and (max-width: 30em) {
