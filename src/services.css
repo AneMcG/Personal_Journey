@@ -6,17 +6,16 @@
 
 /*--------------------- Foot note -----------------------*/
 .footer {
-  display: flex;
   background-color: white;
   width: 100%;
-  position: absolute;
-  bottom: 0;
 }
 
 .foot-note {
   color: black;
   padding: 1rem;
   margin-bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
 
 .foot-note-link {

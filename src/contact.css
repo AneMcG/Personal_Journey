@@ -1,7 +1,6 @@
 body {
   background-color: #f6eedf;
   font-family: Lato, sans-serif;
-  position: relative;
   min-height: 100vh;
 }
 
@@ -14,7 +13,7 @@ body {
 .signage {
   font-family: "Dancing Script", cursive;
   color: #f57b51;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .contact-nr {
@@ -64,10 +63,9 @@ body {
 }
 /*--------------------- Foot note -----------------------*/
 .footer {
-  display: flex;
   background-color: white;
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
@@ -75,6 +73,8 @@ body {
   color: black;
   padding: 1rem;
   margin-bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
 
 .foot-note-link {
