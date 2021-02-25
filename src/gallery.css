@@ -1,4 +1,6 @@
 body {
+  background-color: #f6eedf;
+  font-family: Lato, sans-serif;
   width: 100%;
 }
 .work {
@@ -26,24 +28,25 @@ body {
 }
 
 .btn-epic {
-  display: block;
+  display: inline-block;
   padding: 0.35em 1.2em;
-  border: 0.1em solid black;
+  border: 0.1em solid #d1cebd;
+  margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
   font-size: 1.5rem;
-  color: #ef7725;
+  color: #d1cebd;
   text-align: center;
   transition: all 0.2s;
-  width: 12rem;
+  width: 15rem;
+  max-width: 100%;
 }
 
 .btn-epic:hover {
-  color: #ffffff;
-  background-color: #ef7725;
+  color: #f6eedf;
+  background-color: #d1cebd;
+  border: 0.1em solid #f6eedf;
   text-decoration: none;
 }
 
@@ -61,7 +64,7 @@ body {
 }
 
 .foot-note {
-  color: black;
+  color: #d1cebd;
   padding: 1rem;
   margin-bottom: 0;
 }
@@ -69,18 +72,19 @@ body {
 .foot-note-link {
   text-decoration: none;
   font-size: 1rem;
-  color: #ef7725;
+  color: #f57b51;
   -webkit-transition: 0.2s all ease-in-out;
 }
 
 .foot-note-link:hover {
   text-decoration: none;
-  color: black;
+  color: #f6eedf;
   opacity: 0.5;
 }
 
 /*--------------------- gallery grid -----------------------*/
 .row {
+  background-color: #f6eedf;
   display: flex;
   max-width: 100%;
   margin-right: 0;
@@ -122,7 +126,7 @@ body {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 77px; /* Place the button at the bottom of the page */
-  right: 50px; /* Place the button 30px from the right */
+  right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none;
   margin: 0 0.3em 0.3em 0;
@@ -132,13 +136,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
-  color: #ef7725;
+  color: #f57b51;
   text-align: center;
   transition: all 0.2s;
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #f6eedf; /* Add a dark-grey background on hover */
 }
 
 @media screen and (max-width: 600px) {
