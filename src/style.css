@@ -30,6 +30,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: space-around;
+  font-size: 1.75rem;
   padding: 2rem;
 }
 
@@ -101,7 +102,7 @@ body {
 .signage {
   font-family: "Great Vibes", cursive;
   color: #f57b51;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .contact-nr {

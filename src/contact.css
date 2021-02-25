@@ -63,7 +63,7 @@ body {
 /*--------------------- Foot note -----------------------*/
 .footer {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.541);
+  background-color: white;
   width: 100%;
   position: absolute;
   bottom: 0;
