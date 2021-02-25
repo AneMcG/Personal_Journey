@@ -1,3 +1,9 @@
+.services {
+  box-sizing: border-box;
+  background-color: white;
+  max-width: 100%;
+}
+
 /*--------------------- Foot note -----------------------*/
 .footer {
   display: flex;
