@@ -19,7 +19,8 @@ body {
 
 .contact-nr {
   font-size: 1rem;
-  color: rgb(7, 7, 7);
+  color: black;
+  text-decoration: none;
 }
 .email-link {
   text-decoration: none;
