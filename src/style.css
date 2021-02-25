@@ -23,7 +23,7 @@ body {
 .work {
   width: 100%;
   box-sizing: border-box;
-  background-color: rgb(253, 252, 252);
+  background-color: #ffff;
 }
 
 .work-title {
@@ -73,8 +73,9 @@ body {
 
 /*--------------------- service page -----------------------*/
 .services {
+  margin: 0 auto;
   box-sizing: border-box;
-  background-color: white;
+  background-color: #ffff;
   max-width: 100%;
 }
 
@@ -82,7 +83,7 @@ body {
 
 .contact {
   box-sizing: border-box;
-  background-color: rgb(104, 102, 102);
+  background-color: #ffff;
 }
 
 #contact-card {
@@ -99,30 +100,31 @@ body {
 
 .signage {
   font-family: "Great Vibes", cursive;
-  color: #ef7725;
+  color: #f57b51;
   font-size: 3rem;
 }
 
 .contact-nr {
   font-size: 1rem;
-  color: white;
+  color: #d1cebd;
 }
 .email-link {
   text-decoration: none;
   font-size: 1rem;
-  color: #ef7725;
+  color: #f57b51;
   -webkit-transition: 0.2s all ease-in-out;
 }
 
 .email-link:hover {
   text-decoration: none;
-  color: black;
+  color: #383e56;
   opacity: 0.5;
 }
 
 .greeting {
   font-size: 1rem;
   padding-top: 1rem;
+  color: black;
 }
 
 .button {
@@ -138,7 +140,7 @@ body {
 }
 
 .foot-note {
-  color: black;
+  color: #d1cebd;
   padding: 1rem;
   margin-bottom: 0;
 }
@@ -146,13 +148,13 @@ body {
 .foot-note-link {
   text-decoration: none;
   font-size: 1rem;
-  color: #ef7725;
+  color: #f57b51;
   -webkit-transition: 0.2s all ease-in-out;
 }
 
 .foot-note-link:hover {
   text-decoration: none;
-  color: black;
+  color: #f6eedf;
   opacity: 0.5;
 }
 
@@ -170,12 +172,12 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
-  color: #ef7725;
+  color: #f57b51;
   text-align: center;
   transition: all 0.2s;
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #f6eedf; /* Add a dark-grey background on hover */
 }
 /*# sourceMappingURL=style.css.map */

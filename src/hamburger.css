@@ -3,13 +3,13 @@
   margin: 0;
   font-family: "Great Vibes", cursive;
   font-size: 2rem;
-  color: Black;
+  color: #f6eedf;
   -webkit-transition: 0.2s all ease-in-out;
 }
 
 .navbar-brand:hover {
   text-decoration: none;
-  color: white;
+  color: #f6eedf;
   opacity: 0.75;
 }
 
@@ -17,13 +17,13 @@
 .navbar-light .navbar-nav .nav-link {
   font-family: Lato, sans-serif;
   font-size: 1.5rem;
-  color: #ef7725;
+  color: #f57b51;
   margin-left: 0.5rem;
 }
 
 #nav-bar {
   overflow: hidden;
-  background-color: rgba(104, 102, 102, 0.822);
+  background-color: #f6eedf;
 }
 
 .hamburger {
