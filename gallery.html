@@ -73,92 +73,42 @@
 
     <!------- Previous work --------->
     <section class="work">
-      <div class="container">
-        <div class="gallery">
-          <figure class="gallery__item gallery__item--1">
-            <img
-              src="/img/moss_log.jpg.jpeg"
-              alt="Gallery image 1"
-              class="gallery__img"
-            />
-          </figure>
-          <figure class="gallery__item gallery__item--2">
-            <img
-              src="/img/raven.jpg.jpeg"
-              alt="Gallery image 2"
-              class="gallery__img"
-            />
-          </figure>
-          <figure class="gallery__item gallery__item--3">
-            <img
-              src="/img/pheonix.jpg.jpeg"
-              alt="Gallery image 3"
-              class="gallery__img"
-            />
-          </figure>
-          <figure class="gallery__item gallery__item--4">
-            <img
-              src="/img/wall.jpg"
-              alt="Gallery image 4"
-              class="gallery__img"
-            />
-          </figure>
-          <figure class="gallery__item gallery__item--5">
-            <img
-              src="/img/ackcity.jpg"
-              alt="Gallery image 5"
-              class="gallery__img"
-            />
-          </figure>
-          <figure class="gallery__item gallery__item--6">
-            <img
-              src="/img/Mountain.jpg"
-              alt="Gallery image 6"
-              class="gallery__img"
-            />
-          </figure>
-          <figure class="gallery__item gallery__item--7">
-            <img
-              src="/img/moss_log.jpg.jpeg"
-              alt="Gallery image 1"
-              class="gallery__img"
-            />
-          </figure>
-          <figure class="gallery__item gallery__item--8">
-            <img
-              src="/img/raven.jpg.jpeg"
-              alt="Gallery image 2"
-              class="gallery__img"
-            />
-          </figure>
-          <figure class="gallery__item gallery__item--9">
-            <img
-              src="/img/pheonix.jpg.jpeg"
-              alt="Gallery image 3"
-              class="gallery__img"
-            />
-          </figure>
-          <figure class="gallery__item gallery__item--10">
-            <img
-              src="/img/wall.jpg"
-              alt="Gallery image 4"
-              class="gallery__img"
-            />
-          </figure>
-          <figure class="gallery__item gallery__item--11">
-            <img
-              src="/img/ackcity.jpg"
-              alt="Gallery image 5"
-              class="gallery__img"
-            />
-          </figure>
-          <figure class="gallery__item gallery__item--12">
-            <img
-              src="/img/Mountain.jpg"
-              alt="Gallery image 6"
-              class="gallery__img"
-            />
-          </figure>
+      <div class="row">
+        <div class="column">
+          <img src="/img/moss_log.jpg.jpeg" />
+          <img src="/img/pheonix.jpg.jpeg" />
+          <img src="/img/Mountain.jpg" />
+          <img src="/img/wall.jpg" />
+          <img src="/img/raven.jpg.jpeg" />
+          <img src="/img/ackcity.jpg" />
+          <img src="/img/Me.jpeg" />
+        </div>
+        <div class="column">
+          <img src="/img/Mountain.jpg" />
+          <img src="/img/wall.jpg" />
+          <img src="/img/Me.jpeg" />
+          <img src="/img/raven.jpg.jpeg" />
+          <img src="/img/ackcity.jpg" />
+          <img src="/img/pheonix.jpg.jpeg" />
+          <img src="/img/moss_log.jpg.jpeg" />
+        </div>
+        <div class="column">
+          <img src="/img/Me.jpeg" />
+          <img src="/img/Mountain.jpg" />
+          <img src="/img/wall.jpg" />
+          <img src="/img/moss_log.jpg.jpeg" />
+          <img src="/img/raven.jpg.jpeg" />
+          <img src="/img/ackcity.jpg" />
+          <img src="/img/pheonix.jpg.jpeg" />
+        </div>
+        <div class="column">
+          <img src="/img/pheonix.jpg.jpeg" />
+          <img src="/img/moss_log.jpg.jpeg" />
+          <img src="/img/raven.jpg.jpeg" />
+          <img src="/img/Mountain.jpg" />
+          <img src="/img/wall.jpg" />
+          <img src="/img/Me.jpeg" />
+          <img src="/img/ackcity.jpg" />
         </div>
       </div>
     </section>
@@ -172,6 +122,9 @@
         Copyright <a class="foot-note-link" href="#">Ane McGrail</a> - All
         Rights Reserved
       </p>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        Take us back up
+      </button>
     </section>
     <!-- Bootstrap JavaScript -->
     <script
@@ -191,23 +144,30 @@
     ></script>
     <!-- Custom javascript -->
     <script>
-      window.onload = function () {
-        var imgs = document.getElementById("slideshow").children;
-        interval = 8000;
-        currentPic = 0;
-        imgs[currentPic].style.webkitAnimation = "fadey " + interval + "ms";
-        imgs[currentPic].style.animation = "fadey " + interval + "ms";
-        var infiniteLoop = setInterval(function () {
-          imgs[currentPic].removeAttribute("style");
-          if (currentPic == imgs.length - 1) {
-            currentPic = 0;
-          } else {
-            currentPic++;
-          }
-          imgs[currentPic].style.webkitAnimation = "fadey " + interval + "ms";
-          imgs[currentPic].style.animation = "fadey " + interval + "ms";
-        }, interval);
+      //Get the button:
+      mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
       };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
     </script>
   </body>
 </html>
