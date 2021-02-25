@@ -68,3 +68,30 @@ body {
     margin: 0.4em auto;
   }
 }
+/*--------------------- Foot note -----------------------*/
+.footer {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.541);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.foot-note {
+  color: black;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+.foot-note-link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #ef7725;
+  -webkit-transition: 0.2s all ease-in-out;
+}
+
+.foot-note-link:hover {
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
+}
