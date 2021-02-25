@@ -56,12 +56,12 @@ body {
 
 /*--------------------- Foot note -----------------------*/
 .footer {
-  background-color: black;
+  background-color: white;
   width: 100%;
 }
 
 .foot-note {
-  color: white;
+  color: black;
   padding: 1rem;
   margin-bottom: 0;
 }

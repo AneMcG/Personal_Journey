@@ -134,12 +134,11 @@ body {
 /*--------------------- Foot note -----------------------*/
 .footer {
   display: flex;
-  background-color: black;
   width: 100%;
 }
 
 .foot-note {
-  color: white;
+  color: black;
   padding: 1rem;
   margin-bottom: 0;
 }
