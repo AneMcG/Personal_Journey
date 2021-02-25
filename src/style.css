@@ -181,4 +181,11 @@ body {
 #myBtn:hover {
   background-color: #f6eedf; /* Add a dark-grey background on hover */
 }
+
+@media screen and (max-width: 600px) {
+  #myBtn {
+    right: 10px;
+    bottom: 23px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
