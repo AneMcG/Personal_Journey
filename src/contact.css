@@ -1,6 +1,8 @@
 body {
   background-color: #f6eedf;
   font-family: Lato, sans-serif;
+  position: relative;
+  min-height: 100vh;
 }
 
 #contact-info {
@@ -10,7 +12,7 @@ body {
 }
 
 .signage {
-  font-family: "Great Vibes", cursive;
+  font-family: "Dancing Script", cursive;
   color: #f57b51;
   font-size: 3rem;
 }
@@ -70,7 +72,7 @@ body {
 }
 
 .foot-note {
-  color: #d1cebd;
+  color: black;
   padding: 1rem;
   margin-bottom: 0;
 }
@@ -78,12 +80,12 @@ body {
 .foot-note-link {
   text-decoration: none;
   font-size: 1rem;
-  color: #f57b51;
+  color: #ef7725;
   -webkit-transition: 0.2s all ease-in-out;
 }
 
 .foot-note-link:hover {
   text-decoration: none;
-  color: #f6eedf;
+  color: black;
   opacity: 0.5;
 }
