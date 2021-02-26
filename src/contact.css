@@ -1,8 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f6eedf;
   font-family: Lato, sans-serif;
-  min-height: 100vh;
+  height: 100%;
   font-size: 1rem;
+  position: relative;
+}
+.main-content {
+  min-height: 92.5vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 55px; /* height of your footer */
 }
 
 #contact-info {
@@ -20,7 +36,6 @@ body {
 .contact-nr {
   font-size: 1rem;
   color: black;
-  te
 }
 .email-link {
   text-decoration: none;
@@ -65,9 +80,9 @@ body {
 }
 /*--------------------- Foot note -----------------------*/
 .footer {
-  background-color: white;
+  background-color: #f6eedf;
   width: 100%;
-  position: relative;
+  position: absolute;
   bottom: 0;
 }
 
@@ -75,8 +90,6 @@ body {
   color: black;
   padding: 1rem;
   margin-bottom: 0;
-  position: absolute;
-  bottom: 0;
 }
 
 .foot-note-link {

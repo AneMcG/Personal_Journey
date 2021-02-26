@@ -2,9 +2,12 @@ body {
   background-color: #f6eedf;
   font-family: Lato, sans-serif;
   width: 100%;
+  min-height: 100vh;
+  position: relative;
 }
+
 .work {
-  width: 100%;
+  max-width: 100vw;
   box-sizing: border-box;
   background-color: rgb(253, 252, 252);
 }
@@ -24,7 +27,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  padding: 15px;
 }
 
 .btn-epic {
@@ -57,40 +60,13 @@ body {
   }
 }
 
-/*--------------------- Foot note -----------------------*/
-.footer {
-  background-color: white;
-  width: 100%;
-}
-
-.foot-note {
-  color: #d1cebd;
-  padding: 1rem;
-  margin-bottom: 0;
-}
-
-.foot-note-link {
-  text-decoration: none;
-  font-size: 1rem;
-  color: #f57b51;
-  -webkit-transition: 0.2s all ease-in-out;
-}
-
-.foot-note-link:hover {
-  text-decoration: none;
-  color: #f6eedf;
-  opacity: 0.5;
-}
-
 /*--------------------- gallery grid -----------------------*/
 .row {
   background-color: #f6eedf;
   display: flex;
   max-width: 100%;
-  margin-right: 0;
-  margin-left: 1px;
+  margin: 0;
   flex-wrap: wrap;
-  padding: 0 4px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -151,4 +127,30 @@ body {
     bottom: 70px;
   }
 }
+
+/*--------------------- Foot note -----------------------*/
+.footer {
+  background-color: #f6eedf;
+  width: 100%;
+}
+
+.foot-note {
+  color: black;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+.foot-note-link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #f57b51;
+  -webkit-transition: 0.2s all ease-in-out;
+}
+
+.foot-note-link:hover {
+  text-decoration: none;
+  color: #f6eedf;
+  opacity: 0.5;
+}
+
 /*# sourceMappingURL=style.css.map */
