@@ -104,3 +104,9 @@ body {
   color: black;
   opacity: 0.5;
 }
+
+@media screen and (max-width: 800px) {
+  .footer {
+    text-align: center;
+  }
+}

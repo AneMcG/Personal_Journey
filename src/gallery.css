@@ -153,4 +153,10 @@ body {
   opacity: 0.5;
 }
 
+@media screen and (max-width: 800px) {
+  .footer {
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
