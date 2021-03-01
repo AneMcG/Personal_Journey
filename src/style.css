@@ -124,8 +124,8 @@ body {
 
 .greeting {
   font-size: 1rem;
-  padding-top: 1rem;
   color: black;
+  padding-top: 0.7rem;
 }
 
 .button {
