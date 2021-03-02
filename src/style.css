@@ -124,8 +124,8 @@ body {
 
 .greeting {
   font-size: 1rem;
-  padding-top: 1rem;
   color: black;
+  padding-top: 0.7rem;
 }
 
 .button {
@@ -136,7 +136,6 @@ body {
 
 /*--------------------- Foot note -----------------------*/
 .footer {
-  display: flex;
   width: 100%;
 }
 
@@ -157,6 +156,12 @@ body {
   text-decoration: none;
   color: #f6eedf;
   opacity: 0.5;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    text-align: center;
+  }
 }
 
 #myBtn {
