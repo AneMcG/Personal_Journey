@@ -34,6 +34,9 @@ body {
   font-size: 2.25rem;
 }
 
+img {
+  height: 200px;
+}
 /*--------------------- Foot note -----------------------*/
 .footer {
   background-color: #f6eedf;
