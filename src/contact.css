@@ -9,12 +9,11 @@
 body {
   background-color: #f6eedf;
   font-family: Lato, sans-serif;
-  height: 100%;
   font-size: 1rem;
   position: relative;
 }
 .main-content {
-  min-height: 92.5vh; /* will cover the 100% of viewport */
+  min-height: 90vh; /* will cover the 100% of viewport */
   overflow: hidden;
   display: block;
   position: relative;
@@ -81,7 +80,6 @@ body {
 }
 /*--------------------- Foot note -----------------------*/
 .footer {
-  background-color: #f6eedf;
   width: 100%;
   position: absolute;
   bottom: 0;

@@ -27,6 +27,7 @@ body {
 }
 
 .work-title {
+  color: #5a636c;
   margin: 0;
   display: flex;
   justify-content: space-around;
@@ -80,6 +81,12 @@ body {
   max-width: 100%;
 }
 
+.services h3,
+ul,
+p {
+  color: #5a636c;
+}
+
 /*--------------------- contact page -----------------------*/
 
 .contact {
@@ -107,7 +114,7 @@ body {
 
 .contact-nr {
   font-size: 1rem;
-  color: black;
+  color: #5a636c;
 }
 .email-link {
   text-decoration: none;
@@ -118,13 +125,13 @@ body {
 
 .email-link:hover {
   text-decoration: none;
-  color: #383e56;
+  color: #5a636c;
   opacity: 0.5;
 }
 
 .greeting {
   font-size: 1rem;
-  color: black;
+  color: #5a636c;
   padding-top: 0.7rem;
 }
 
@@ -140,7 +147,7 @@ body {
 }
 
 .foot-note {
-  color: black;
+  color: #5a636c;
   padding: 1rem;
   margin-bottom: 0;
 }
